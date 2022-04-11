@@ -28,3 +28,24 @@ function funPoemData({yearFromWeb, authorFromWeb}){
 
 funPoemData(poemData)
 
+const arr = ["hi", "hello", "wassup", function() {
+    console.log("Ciao");
+},"bye"]
+
+const firstItem = arr[0]
+const secondItem = arr[1]
+
+const [firstItemX, secondItemX, ...elseX] = arr
+
+console.log(firstItemX === firstItem); // true
+
+console.log(elseX); // [wassup, bye]
+
+console.log(arr[arr.length-1]); // utolsó elem (bye)
+
+const [,,, ourFun] = arr // függvény elem
+
+ourFun() //Ciao
+
+
+

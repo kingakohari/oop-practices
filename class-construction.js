@@ -1,9 +1,10 @@
 class Poem {
-    constructor(author, year, title, text, makePage) {
+    constructor(author, year, title, text) {
         this.author = author;
         this.year = year;
         this.title = title;
         this.text = text;
+    }
         makePage(){
             console.log(`
             Title: ${this.title}
@@ -13,9 +14,7 @@ class Poem {
             Author: ${this.author}
             Translator: ${this.translator}
             ${this.year} 
-            `
-        )};
-    
+            `);
     }
 }
 
@@ -25,11 +24,11 @@ console.log(poemData);
 
 console.log(poemData.title);
 
-poemData.makepage()
+poemData.makePage()
 
-class ForeignPoem {
+class ForeignPoem extends Poem {
     constructor(author, year, title, text, translator) {
-        super(author, title, year, text)
+        super(author, year, title, text)
         this.translator = translator
     }
 }
