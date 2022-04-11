@@ -33,3 +33,4 @@ console.log(favePoemOfAndras.lang);
 console.log(favePoemOfAndras.__proto__);
 
 console.log(Poem.prototype);  // ugyanaz, mint a felette lévő
+
